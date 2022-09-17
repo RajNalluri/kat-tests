@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>h3_Hello Rajesh</name>
+   <tag></tag>
+   <elementGuidId>c5c69b72-dd4c-4de1-9fe6-8697df3fd20c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*/text()[normalize-space(.)='Hello Rajesh!']/parent::*</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>h3.let_space</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>h3</value>
+      <webElementGuid>2741c000-c1c8-41bf-9321-8d77f9b90293</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>let_space</value>
+      <webElementGuid>677baa77-20ba-45b7-8e9e-f540fea25da6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Hello Rajesh!</value>
+      <webElementGuid>26b9031d-c5d5-488a-841f-dd4c0b47b4da</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/form[@class=&quot;grid&quot;]/center[1]/h3[@class=&quot;let_space&quot;]</value>
+      <webElementGuid>0834ff93-d198-4176-a597-000a17e2e9e9</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Hello Rajesh!']/parent::*</value>
+      <webElementGuid>ca938cff-b8ce-4077-81aa-daf47b40f6a9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3</value>
+      <webElementGuid>71a1ccc2-9a52-4bed-8f32-1fbf4c37771c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//h3[(text() = 'Hello Rajesh!' or . = 'Hello Rajesh!')]</value>
+      <webElementGuid>18687824-d7c3-4a85-a71b-c352ab090aa7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
