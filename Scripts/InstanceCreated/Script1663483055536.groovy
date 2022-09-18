@@ -37,14 +37,17 @@ String[] str = created_instance_text.split(' ')
 
 String created_instance = str.last()
 
+println(created_instance)
+
 WebUI.verifyTextPresent('i-[0-9a-z]+', true)
+
+WebUI.delay(60)
 
 WebUI.click(findTestObject('show_instances_status_page'))
 
-//WebUI.delay(5)
-println(created_instance)
-
 String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id'):created_instance]))
+
+println(final_text)
 
 assert final_text.contains('running')
 
