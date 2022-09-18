@@ -39,7 +39,7 @@ WebUI.verifyTextPresent('i-[0-9a-z]+', true)
 
 WebUI.click(findTestObject('show_instances_status_page'))
 
-WebUI.delay(2)
+WebUI.delay(30)
 
 String final_text = WebUI.getText(findTestObject('instances_on_show_page', [(created_instance) : created_instance]))
 
