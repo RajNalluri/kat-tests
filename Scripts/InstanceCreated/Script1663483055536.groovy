@@ -44,7 +44,7 @@ WebUI.click(findTestObject('show_instances_status_page'))
 //WebUI.delay(5)
 println(created_instance)
 
-String final_text = WebUI.getText(findTestObject('instances_on_show_page', [(created_instance) : created_instance]))
+String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id'):created_instance]))
 
 assert final_text.contains('running')
 

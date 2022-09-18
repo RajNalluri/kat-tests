@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[(contains(text(), 'i-0da6f9f607587c1da') or contains(., '${created_instance}'))]</value>
+         <value>//*[(contains(text(), ${instance_id})]</value>
       </entry>
       <entry>
          <key>BASIC</key>
@@ -26,6 +26,6 @@
       <name>text</name>
       <type>Main</type>
       <value>${created_instance}</value>
-      <webElementGuid>978910f2-7be3-4c2f-8524-cc77d1a5fb36</webElementGuid>
+      <webElementGuid>b1879f81-6e61-4ce8-8db7-b5576ae346b8</webElementGuid>
    </webElementProperties>
 </WebElementEntity>
