@@ -1,24 +1,3 @@
 {
-  "brokenTestObjects": [
-    {
-      "approved": true,
-      "testObjectId": "Object Repository/instances_on_show_page",
-      "brokenLocator": "//*[(contains(text(), concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\")) or contains(., concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\")))]",
-      "brokenLocatorMethod": "BASIC",
-      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003dconcat(\u0027(\u0027, \"\u0027\", \u0027i-0f76276b845b06574\u0027, \"\u0027\", \u0027, \u0027, \"\u0027\", \u0027terminated\u0027, \"\u0027\", \u0027, \u0027, \"\u0027\", \u0027\u0027, \"\u0027\", \u0027)\u0027)])[1]/following::li[1]",
-      "proposedLocatorMethod": "XPATH",
-      "recoveryMethod": "XPATH",
-      "pathToScreenshot": "Reports/Self-healing/Object Repository/instances_on_show_page_XPATH.png"
-    },
-    {
-      "approved": true,
-      "testObjectId": "Object Repository/instances_on_show_page",
-      "brokenLocator": "//*[(contains(text(), concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\")) or contains(., concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\")))]",
-      "brokenLocatorMethod": "BASIC",
-      "proposedLocator": "//li[(text() \u003d concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\") or . \u003d concat(\"(\" , \"\u0027\" , \"i-0da6f9f607587c1da\" , \"\u0027\" , \", \" , \"\u0027\" , \"running\" , \"\u0027\" , \", \" , \"\u0027\" , \"ec2-3-86-229-246.compute-1.amazonaws.com\" , \"\u0027\" , \")\"))]",
-      "proposedLocatorMethod": "XPATH",
-      "recoveryMethod": "XPATH",
-      "pathToScreenshot": "Reports/Self-healing/Object Repository/instances_on_show_page_customAttributes.png"
-    }
-  ]
+  "brokenTestObjects" : [ ]
 }

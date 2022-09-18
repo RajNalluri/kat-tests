@@ -19,7 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('http://localhost:5000')
 
-WebUI.setText(findTestObject('user_name_field'), 'Rajesh')
+String login_user = 'Rajesh'
+
+WebUI.setText(findTestObject('user_name_field'), login_user)
 
 WebUI.click(findTestObject('login_button'))
 
@@ -39,11 +41,18 @@ WebUI.verifyTextPresent('i-[0-9a-z]+', true)
 
 WebUI.click(findTestObject('show_instances_status_page'))
 
-WebUI.delay(30)
+//WebUI.delay(5)
+println(created_instance)
 
 String final_text = WebUI.getText(findTestObject('instances_on_show_page', [(created_instance) : created_instance]))
 
 assert final_text.contains('running')
+
+String pub_addr = final_text.split(',').last().split('\'')[1]
+
+WebUI.navigateToUrl('http://' + pub_addr + ':80')
+
+WebUI.verifyTextPresent('Hello ' + login_user + '!', false)
 
 WebUI.closeBrowser()
 
