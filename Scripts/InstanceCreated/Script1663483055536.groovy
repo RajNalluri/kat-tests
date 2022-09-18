@@ -17,17 +17,33 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('')
+WebUI.openBrowser('http://localhost:5000')
 
-WebUI.navigateToUrl('http://127.0.0.1:5000/')
+WebUI.setText(findTestObject('user_name_field'), 'Rajesh')
 
-WebUI.setText(findTestObject('Object Repository/input_Please login to create your EC2 insta_187fdf'), 'Rajesh')
+WebUI.click(findTestObject('login_button'))
 
-WebUI.click(findTestObject('Object Repository/input_Please login to create your EC2 insta_bf9307'))
+WebUI.verifyTextPresent('Rajesh', false)
 
-WebUI.verifyElementText(findTestObject('Object Repository/h3_Hello Rajesh'), 'Hello Rajesh!')
+WebUI.click(findTestObject('create_instance_button'))
 
-WebUI.click(findTestObject('Object Repository/input_Please login to create your EC2 insta_bf9307'))
+WebUI.delay(3)
+
+String created_instance_text = WebUI.getText(findTestObject('created_instance_id'))
+
+String[] str = created_instance_text.split(' ')
+
+String created_instance = str.last()
+
+WebUI.verifyTextPresent('i-[0-9a-z]+', true)
+
+WebUI.click(findTestObject('show_instances_status_page'))
+
+WebUI.delay(2)
+
+String final_text = WebUI.getText(findTestObject('instances_on_show_page', [(created_instance) : created_instance]))
+
+assert final_text.contains('running')
 
 WebUI.closeBrowser()
 

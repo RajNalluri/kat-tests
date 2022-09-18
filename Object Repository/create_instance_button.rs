@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Please login to create your EC2 insta_bf9307</name>
+   <name>create_instance_button</name>
    <tag></tag>
-   <elementGuidId>61c8e8da-91b0-4c01-98c0-b94a0d7615ba</elementGuidId>
+   <elementGuidId>d1dd4e50-0419-40d5-84ef-e3e26cfbd562</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@value='Login']</value>
+         <value>//input[@value='Create your EC2 instance']</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>bbc83d27-25bb-4ae6-9f40-9b92d446cb36</webElementGuid>
+      <webElementGuid>b0659f4b-cac5-46d9-bfc7-bb8d04a371b9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>file_submit</value>
-      <webElementGuid>004be90e-eb1a-4a84-8619-4656cbf8dcef</webElementGuid>
+      <webElementGuid>9cf8c1c8-3912-44d1-a28d-9baed91bb415</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -38,39 +38,39 @@
       <name>type</name>
       <type>Main</type>
       <value>Submit</value>
-      <webElementGuid>be9d22f3-20c7-4df9-978f-a070e2f8935e</webElementGuid>
+      <webElementGuid>1e2e81dc-f8f0-4c31-bd52-3adaca43bcce</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>value</name>
       <type>Main</type>
-      <value>Login</value>
-      <webElementGuid>1fbc73fb-e974-464a-ae82-14662a37447d</webElementGuid>
+      <value>Create your EC2 instance</value>
+      <webElementGuid>448b3cfb-65b3-4b9a-a5f9-b619242663ad</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html[1]/body[1]/form[@class=&quot;grid&quot;]/center[1]/input[@class=&quot;file_submit&quot;]</value>
-      <webElementGuid>b3146747-8566-4f57-ad61-1679d356b5f9</webElementGuid>
+      <value>/html[1]/body[1]/form[@class=&quot;grid&quot;]/center[2]/input[@class=&quot;file_submit&quot;]</value>
+      <webElementGuid>e002b46b-b54f-4431-a46e-c63e95336e16</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@value='Login']</value>
-      <webElementGuid>b2d61de6-e68f-4078-8b80-41ba5e703f83</webElementGuid>
+      <value>//input[@value='Create your EC2 instance']</value>
+      <webElementGuid>2966cee5-269d-4ff4-b238-f6ab380a8f98</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//center/input</value>
-      <webElementGuid>3a1a5412-092b-4371-8bed-29d1461f140b</webElementGuid>
+      <value>//center[2]/input</value>
+      <webElementGuid>743531cf-746f-4c0a-9a91-e59a9aa46bd2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +78,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'Submit']</value>
-      <webElementGuid>7010c2de-6273-464f-8e63-3b6bac137c85</webElementGuid>
+      <webElementGuid>3c07bd18-b479-4bb3-87f6-90da5eac47f8</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

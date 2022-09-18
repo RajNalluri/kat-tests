@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Please login to create your EC2 insta_187fdf</name>
+   <name>show_instances_status_page</name>
    <tag></tag>
-   <elementGuidId>15e87319-c560-454b-b080-c8172bed8e93</elementGuidId>
+   <elementGuidId>f698e77e-1cd8-4fed-9f65-36f1ac0387f1</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//input[@id='name']</value>
+         <value>//input[@value='Show instances']</value>
       </entry>
       <entry>
          <key>CSS</key>
-         <value>#name</value>
+         <value>input.file_submit</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,47 +22,47 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2453c227-583f-4621-be30-e2acbb6c0d01</webElementGuid>
+      <webElementGuid>9cefbcb7-09a5-4db0-b634-bc9d21dffdce</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>file_submit</value>
+      <webElementGuid>6494172e-d254-48d4-9856-9f2d1651dd80</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>efd4d815-2d8c-4dbf-be56-b84bae4b278c</webElementGuid>
+      <value>Submit</value>
+      <webElementGuid>0ce19ade-4f7a-427c-9e72-5ee340e2bf49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>value</name>
       <type>Main</type>
-      <value>name</value>
-      <webElementGuid>d147da4a-7b15-4118-ba3a-1aa2e495a726</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>name</name>
-      <type>Main</type>
-      <value>name</value>
-      <webElementGuid>c1781148-cabe-4f73-8b8c-4684d139d4d8</webElementGuid>
+      <value>Show instances</value>
+      <webElementGuid>457eb32d-fabc-48d4-9a1e-055787630f45</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;name&quot;)</value>
-      <webElementGuid>1fad79cc-d6fa-48cd-8af8-c9e4a225d2f0</webElementGuid>
+      <value>/html[1]/body[1]/form[@class=&quot;grid&quot;]/center[1]/input[@class=&quot;file_submit&quot;]</value>
+      <webElementGuid>11aa5fec-1084-4af7-8d98-f30b3840564f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='name']</value>
-      <webElementGuid>726035c2-3b1e-4b29-94d1-eb2e93fcf41b</webElementGuid>
+      <value>//input[@value='Show instances']</value>
+      <webElementGuid>019487b0-8a5f-40d0-b13d-39c3f2ad525d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,14 +70,14 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>e6fd4d58-7997-4df8-9bac-a8f1a314ba1c</webElementGuid>
+      <webElementGuid>86d4268b-484a-49aa-a000-ef9301bbeac1</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @id = 'name' and @name = 'name']</value>
-      <webElementGuid>0f71ebf6-eb79-43d3-bea4-08ab031d87fa</webElementGuid>
+      <value>//input[@type = 'Submit']</value>
+      <webElementGuid>bc520599-cf1c-4be4-9de6-ca2a3ba023d5</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
