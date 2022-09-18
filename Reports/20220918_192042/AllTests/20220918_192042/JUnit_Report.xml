@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="AllTests" time="90.167" tests="2" failures="0" errors="0">
+   <testsuite name="Integration" tests="1" failures="0" errors="0" time="3.756" skipped="0" timestamp="2022-09-18 19:21:05" hostname="raj09 - LAPTOP-IP13EE2V" id="Test Suites/Integration">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220918_192042\\Integration\\20220918_192047"/>
+         <property name="logFiles" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220918_192042\\Integration\\20220918_192047\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="raj09 - LAPTOP-IP13EE2V"/>
+         <property name="hostAddress" value="192.168.116.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+      </properties>
+      <testcase name="Test Cases/getInstances" time="3.462" classname="Test Cases/getInstances" status="PASSED">
+         <system-out><![CDATA[2022-09-18 19:21:06 - [TEST_CASE][PASSED] - Test Cases/getInstances: Test Cases/getInstances
+
+2022-09-18 19:21:06 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("ws_objects/getInstances")): Send request successfully
+
+2022-09-18 19:21:09 - [MESSAGE][INFO] - HAR: C:\Users\raj09\Developer\katalon\kat-tests\Reports\20220918_192042\Integration\20220918_192047\requests\main\0.har
+
+2022-09-18 19:21:09 - [MESSAGE][PASSED] - Send request successfully
+
+2022-09-18 19:21:09 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-09-18 19:21:09 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-09-18 19:21:09 - [TEST_STEP][PASSED] - instance_count = getElementPropertyValue(response, "count"): null
+
+2022-09-18 19:21:09 - [TEST_STEP][PASSED] - assert instance_count > 0: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-09-18 19:21:05 - [TEST_SUITE][PASSED] - Integration: Test Cases/getInstances]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+   <testsuite name="System" tests="1" failures="0" errors="0" time="79.503" skipped="0" timestamp="2022-09-18 19:21:13" hostname="raj09 - LAPTOP-IP13EE2V" id="Test Suites/System">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220918_192042\\System\\20220918_192057"/>
+         <property name="logFiles" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220918_192042\\System\\20220918_192057\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="raj09 - LAPTOP-IP13EE2V"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 105.0.0.0"/>
+         <property name="hostAddress" value="192.168.116.1"/>
+         <property name="sessionId" value="75848e7992ca486be439c1bb6adf2e50"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/InstanceCreated" time="79.237" classname="Test Cases/InstanceCreated" status="PASSED">
+         <system-out><![CDATA[2022-09-18 19:21:13 - [TEST_CASE][PASSED] - Test Cases/InstanceCreated: Test Cases/InstanceCreated
+
+2022-09-18 19:21:14 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-18 19:21:14 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-18 19:21:14 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-18 19:21:17 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-18 19:21:17 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-18 19:21:17 - [TEST_STEP][PASSED] - setText(findTestObject("user_name_field"), login_user): Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-18 19:21:18 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-18 19:21:18 - [TEST_STEP][PASSED] - click(findTestObject("login_button")): Object: 'Object Repository/login_button' is clicked on
+
+2022-09-18 19:21:19 - [MESSAGE][PASSED] - Object: 'Object Repository/login_button' is clicked on
+
+2022-09-18 19:21:19 - [TEST_STEP][PASSED] - verifyTextPresent("Rajesh", false): Text 'Rajesh' is present on page 
+
+2022-09-18 19:21:19 - [MESSAGE][PASSED] - Text 'Rajesh' is present on page 
+
+2022-09-18 19:21:19 - [TEST_STEP][PASSED] - click(findTestObject("create_instance_button")): Object: 'Object Repository/create_instance_button' is clicked on
+
+2022-09-18 19:21:22 - [MESSAGE][PASSED] - Object: 'Object Repository/create_instance_button' is clicked on
+
+2022-09-18 19:21:22 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-09-18 19:21:25 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-09-18 19:21:25 - [TEST_STEP][PASSED] - created_instance_text = getText(findTestObject("created_instance_id")): Text of object 'Object Repository/created_instance_id' is: 'Instance id: i-0f0d000ccd39dd018'
+
+2022-09-18 19:21:26 - [MESSAGE][PASSED] - Text of object 'Object Repository/created_instance_id' is: 'Instance id: i-0f0d000ccd39dd018'
+
+2022-09-18 19:21:26 - [TEST_STEP][PASSED] - str = created_instance_text.split(" "): null
+
+2022-09-18 19:21:26 - [TEST_STEP][PASSED] - created_instance = str.last(): null
+
+2022-09-18 19:21:26 - [TEST_STEP][PASSED] - println(created_instance): null
+
+2022-09-18 19:21:26 - [TEST_STEP][PASSED] - verifyTextPresent("i-[0-9a-z]+", true): Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-18 19:21:26 - [MESSAGE][PASSED] - Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-18 19:21:26 - [TEST_STEP][PASSED] - delay(60): Delayed 60 second(s)
+
+2022-09-18 19:22:26 - [MESSAGE][PASSED] - Delayed 60 second(s)
+
+2022-09-18 19:22:26 - [TEST_STEP][PASSED] - click(findTestObject("show_instances_status_page")): Object: 'Object Repository/show_instances_status_page' is clicked on
+
+2022-09-18 19:22:28 - [MESSAGE][PASSED] - Object: 'Object Repository/show_instances_status_page' is clicked on
+
+2022-09-18 19:22:28 - [TEST_STEP][PASSED] - final_text = getText(findTestObject("my_instance", ["instance_id":created_instance])): Text of object 'Object Repository/my_instance' is: 'Instance list:
+('i-0f0d000ccd39dd018', 'running', 'ec2-50-19-53-240.compute-1.amazonaws.com')
+('i-05a7e75648a098d7e', 'running', 'ec2-3-82-92-182.compute-1.amazonaws.com')'
+
+2022-09-18 19:22:29 - [MESSAGE][PASSED] - Text of object 'Object Repository/my_instance' is: 'Instance list:
+('i-0f0d000ccd39dd018', 'running', 'ec2-50-19-53-240.compute-1.amazonaws.com')
+('i-05a7e75648a098d7e', 'running', 'ec2-3-82-92-182.compute-1.amazonaws.com')'
+
+2022-09-18 19:22:29 - [TEST_STEP][PASSED] - println(final_text): null
+
+2022-09-18 19:22:29 - [TEST_STEP][PASSED] - assert final_text.contains("running"): null
+
+2022-09-18 19:22:29 - [TEST_STEP][PASSED] - pub_addr = last().split("'")[1]: null
+
+2022-09-18 19:22:29 - [TEST_STEP][PASSED] - navigateToUrl("http://" + pub_addr + ":80"): Navigate to 'http://ec2-3-82-92-182.compute-1.amazonaws.com:80' successfully
+
+2022-09-18 19:22:31 - [MESSAGE][PASSED] - Navigate to 'http://ec2-3-82-92-182.compute-1.amazonaws.com:80' successfully
+
+2022-09-18 19:22:31 - [TEST_STEP][PASSED] - verifyTextPresent("Hello " + login_user + "!", false): Text 'Hello Rajesh!' is present on page 
+
+2022-09-18 19:22:32 - [MESSAGE][PASSED] - Text 'Hello Rajesh!' is present on page 
+
+2022-09-18 19:22:32 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-18 19:22:32 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-09-18 19:21:13 - [TEST_SUITE][PASSED] - System: Test Cases/InstanceCreated]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

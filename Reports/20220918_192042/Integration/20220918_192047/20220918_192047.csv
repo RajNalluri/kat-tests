@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Integration,,,,2022-09-18 19:21:05,2022-09-18 19:21:09,3.756s,PASSED
+,,,,,,,
+Test Cases/getInstances,,,,2022-09-18 19:21:06,2022-09-18 19:21:09,3.462s,PASSED
+"response = sendRequest(findTestObject(""ws_objects/getInstances""))",,,,2022-09-18 19:21:06,2022-09-18 19:21:09,3.004s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-09-18 19:21:09,2022-09-18 19:21:09,0.018s,PASSED
+"instance_count = getElementPropertyValue(response, ""count"")",,,,2022-09-18 19:21:09,2022-09-18 19:21:09,0.059s,PASSED
+assert instance_count > 0,,,,2022-09-18 19:21:09,2022-09-18 19:21:09,0.002s,PASSED

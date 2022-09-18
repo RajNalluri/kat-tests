@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Integration,,,,2022-09-18 18:08:12,2022-09-18 18:08:23,10.398s,PASSED
+,,,,,,,
+Test Cases/ApiTests/getInstances,,,,2022-09-18 18:08:13,2022-09-18 18:08:23,9.580s,PASSED
+"response = sendRequest(findTestObject(""rest_objects/instances""))",,,,2022-09-18 18:08:16,2022-09-18 18:08:23,6.802s,PASSED
+"verifyResponseStatusCode(response, 200)",,,,2022-09-18 18:08:23,2022-09-18 18:08:23,0.059s,PASSED
+"instance_count = getElementPropertyValue(response, ""count"")",,,,2022-09-18 18:08:23,2022-09-18 18:08:23,0.165s,PASSED
+assert instance_count > 1,,,,2022-09-18 18:08:23,2022-09-18 18:08:23,0.002s,PASSED
