@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>created_instance_id</name>
+   <tag></tag>
+   <elementGuidId>86fa3c43-e296-4729-8fad-954217d7069d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(.//*[normalize-space(text()) and normalize-space(.)='Congrats! Your EC2 instance created.'])[1]/following::b[1]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>7cd4c005-07a6-47de-bd7a-4870ec8a3d76</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Instance id: ec2.Instance(id='i-009e6026a2d236886')</value>
+      <webElementGuid>810ac9f5-e80a-4d97-a9b0-c431e4cfc394</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/b[1]</value>
+      <webElementGuid>1f7e904a-70c8-4401-9c24-e4831e2a2f35</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Congrats! Your EC2 instance created.'])[1]/following::b[1]</value>
+      <webElementGuid>4da17b9d-ad58-4437-8b77-c52bfa2089c7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Capture object:'])[1]/preceding::b[1]</value>
+      <webElementGuid>a0cc8c30-712e-466e-91af-9223043fcaf4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Alt'])[1]/preceding::b[1]</value>
+      <webElementGuid>01b64902-d633-472b-8f42-7b85e7fa9cb1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//b</value>
+      <webElementGuid>dc6c829b-d74d-4303-9625-c52080682419</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = concat(&quot;Instance id: ec2.Instance(id=&quot; , &quot;'&quot; , &quot;i-009e6026a2d236886&quot; , &quot;'&quot; , &quot;)&quot;) or . = concat(&quot;Instance id: ec2.Instance(id=&quot; , &quot;'&quot; , &quot;i-009e6026a2d236886&quot; , &quot;'&quot; , &quot;)&quot;))]</value>
+      <webElementGuid>6a7bd091-395b-4713-8804-52100f1d7232</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

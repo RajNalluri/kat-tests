@@ -21,7 +21,7 @@ WebUI.openBrowser('http://localhost:5000')
 
 String login_user = 'Rajesh'
 
-WebUI.setText(findTestObject('user_name_field'), logged_in_user)
+WebUI.setText(findTestObject('user_name_field'), login_user)
 
 WebUI.click(findTestObject('login_button'))
 
@@ -45,7 +45,7 @@ WebUI.delay(60)
 
 WebUI.click(findTestObject('show_instances_status_page'))
 
-String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id') : created_instance]))
+String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id'):created_instance]))
 
 println(final_text)
 
@@ -53,9 +53,9 @@ assert final_text.contains('running')
 
 String pub_addr = final_text.split(',').last().split('\'')[1]
 
-WebUI.navigateToUrl(('http://' + pub_addr) + ':80')
+WebUI.navigateToUrl('http://' + pub_addr + ':80')
 
-WebUI.verifyTextPresent(expected_message, false)
+WebUI.verifyTextPresent('Hello ' + login_user + '!', false)
 
 WebUI.closeBrowser()
 

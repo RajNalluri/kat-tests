@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>create_instance_button</name>
+   <tag></tag>
+   <elementGuidId>be55b101-3200-434a-8f88-c4430f1614b1</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@value='Create your EC2 instance']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input.file_submit</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>fbdc43b0-320b-4305-95ea-a147a4200ae4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>file_submit</value>
+      <webElementGuid>8fd94ac8-de4f-469d-b380-eca5153597eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>Submit</value>
+      <webElementGuid>8f64a43a-8b2f-42db-abbc-044df7607d1e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>value</name>
+      <type>Main</type>
+      <value>Create your EC2 instance</value>
+      <webElementGuid>ddf91afd-bc9a-4e09-a5e8-472113452bc6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[1]/form[@class=&quot;grid&quot;]/center[2]/input[@class=&quot;file_submit&quot;]</value>
+      <webElementGuid>5fcbd874-1e31-4385-9202-55062f9969d6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@value='Create your EC2 instance']</value>
+      <webElementGuid>c7c40806-5056-4466-af4c-a89117332060</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//center[2]/input</value>
+      <webElementGuid>034f8b82-401c-4a7a-b1ab-6b22de168e82</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@type = 'Submit']</value>
+      <webElementGuid>da5dc412-8aa8-40c0-b115-b66bd1f11aee</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

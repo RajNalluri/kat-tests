@@ -17,45 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://localhost:5000')
+response = WS.sendRequest(findTestObject('02_Web_Service_Objects/Instance_Info_Retrieval/get_instances'))
 
-String login_user = 'Rajesh'
+WS.verifyResponseStatusCode(response, 200)
 
-WebUI.setText(findTestObject('user_name_field'), logged_in_user)
+instance_count = WS.getElementPropertyValue(response, 'count')
 
-WebUI.click(findTestObject('login_button'))
-
-WebUI.verifyTextPresent('Rajesh', false)
-
-WebUI.click(findTestObject('create_instance_button'))
-
-WebUI.delay(3)
-
-String created_instance_text = WebUI.getText(findTestObject('created_instance_id'))
-
-String[] str = created_instance_text.split(' ')
-
-String created_instance = str.last()
-
-println(created_instance)
-
-WebUI.verifyTextPresent('i-[0-9a-z]+', true)
-
-WebUI.delay(60)
-
-WebUI.click(findTestObject('show_instances_status_page'))
-
-String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id') : created_instance]))
-
-println(final_text)
-
-assert final_text.contains('running')
-
-String pub_addr = final_text.split(',').last().split('\'')[1]
-
-WebUI.navigateToUrl(('http://' + pub_addr) + ':80')
-
-WebUI.verifyTextPresent(expected_message, false)
-
-WebUI.closeBrowser()
+assert instance_count > 0
 

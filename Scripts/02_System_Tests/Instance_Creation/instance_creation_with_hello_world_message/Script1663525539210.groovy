@@ -21,17 +21,17 @@ WebUI.openBrowser('http://localhost:5000')
 
 String login_user = 'Rajesh'
 
-WebUI.setText(findTestObject('user_name_field'), logged_in_user)
+WebUI.setText(findTestObject('01_Page_Objects/login_page/user_name_field'), logged_in_user)
 
-WebUI.click(findTestObject('login_button'))
+WebUI.click(findTestObject('01_Page_Objects/login_page/login_button'))
 
 WebUI.verifyTextPresent('Rajesh', false)
 
-WebUI.click(findTestObject('create_instance_button'))
+WebUI.click(findTestObject('01_Page_Objects/user_portal_for_instance_creation/create_instance_button'))
 
 WebUI.delay(3)
 
-String created_instance_text = WebUI.getText(findTestObject('created_instance_id'))
+String created_instance_text = WebUI.getText(findTestObject('01_Page_Objects/user_portal_for_instance_creation/created_instance_id'))
 
 String[] str = created_instance_text.split(' ')
 
@@ -43,9 +43,9 @@ WebUI.verifyTextPresent('i-[0-9a-z]+', true)
 
 WebUI.delay(60)
 
-WebUI.click(findTestObject('show_instances_status_page'))
+WebUI.click(findTestObject('01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page'))
 
-String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id') : created_instance]))
+String final_text = WebUI.getText(findTestObject('01_Page_Objects/instances_listing_page/my_instance'))
 
 println(final_text)
 

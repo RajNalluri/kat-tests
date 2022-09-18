@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>InstanceCreated</name>
+   <name>instance_creation_with_hello_world_message</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>cbe084ce-f125-4f24-bf7b-30da8a892464</testCaseGuid>
+   <testCaseGuid>bb7d998c-20f4-47a2-b6f9-d93af9c52283</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>56531d42-5a03-4c04-8f96-8b722fb857d9</variableId>
+      <variableId>abfee6a4-e3fe-411b-9e5d-46549a275014</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>3a923cd0-87e6-42b0-962e-a21e67c8c57a</variableId>
+      <variableId>600fd8e6-e697-4785-888a-9ace74a6ead3</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'Rajesh'</defaultValue>
       <description></description>
-      <id>56531d42-5a03-4c04-8f96-8b722fb857d9</id>
+      <id>abfee6a4-e3fe-411b-9e5d-46549a275014</id>
       <masked>false</masked>
       <name>logged_in_user</name>
    </variable>
    <variable>
       <defaultValue>'Hello Rajesh!'</defaultValue>
       <description></description>
-      <id>3a923cd0-87e6-42b0-962e-a21e67c8c57a</id>
+      <id>600fd8e6-e697-4785-888a-9ace74a6ead3</id>
       <masked>false</masked>
       <name>expected_message</name>
    </variable>
