@@ -21,13 +21,13 @@ WebUI.openBrowser('http://localhost:5000')
 
 String login_user = 'Rajesh'
 
-WebUI.setText(findTestObject('user_name_field'), login_user)
+WebUI.setText(findTestObject('01_Page_Objects/login_page/user_name_field'), logged_in_user)
 
-WebUI.click(findTestObject('login_button'))
+WebUI.click(findTestObject('01_Page_Objects/login_page/login_button'))
 
 WebUI.verifyTextPresent(logged_in_user, false)
 
-WebUI.click(findTestObject('show_instances_status_page'))
+WebUI.click(findTestObject('01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page'))
 
 WebUI.verifyTextPresent('running', false)
 

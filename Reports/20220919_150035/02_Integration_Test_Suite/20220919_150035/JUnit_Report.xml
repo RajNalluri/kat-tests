@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="02_Integration_Test_Suite" time="4.841" tests="2" failures="0" errors="0">
+   <testsuite name="02_Integration_Test_Suite" tests="2" failures="0" errors="0" time="4.841" skipped="0" timestamp="2022-09-19 15:00:43" hostname="raj09 - LAPTOP-IP13EE2V" id="Test Suites/02_Integration_Test_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_150035\\02_Integration_Test_Suite\\20220919_150035"/>
+         <property name="logFiles" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_150035\\02_Integration_Test_Suite\\20220919_150035\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="raj09 - LAPTOP-IP13EE2V"/>
+         <property name="hostAddress" value="192.168.116.1"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+      </properties>
+      <testcase name="Test Cases/01_Integration_Tests/create_instance_api" time="2.445" classname="Test Cases/01_Integration_Tests/create_instance_api" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:00:43 - [TEST_CASE][PASSED] - Test Cases/01_Integration_Tests/create_instance_api: Test Cases/01_Integration_Tests/create_instance_api
+
+2022-09-19 15:00:44 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("02_Web_Service_Objects/Instance_Creation/create_instance")): Send request successfully
+
+2022-09-19 15:00:45 - [MESSAGE][INFO] - HAR: C:\Users\raj09\Developer\katalon\kat-tests\Reports\20220919_150035\02_Integration_Test_Suite\20220919_150035\requests\main\0.har
+
+2022-09-19 15:00:45 - [MESSAGE][PASSED] - Send request successfully
+
+2022-09-19 15:00:45 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-09-19 15:00:46 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-09-19 15:00:46 - [TEST_STEP][PASSED] - instance_count = verifyElementPropertyValue(response, "data.instance_id", "i-123456789"): Verify element property value successfully
+
+2022-09-19 15:00:46 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/01_Integration_Tests/get_instances_api" time="1.97" classname="Test Cases/01_Integration_Tests/get_instances_api" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:00:46 - [TEST_CASE][PASSED] - Test Cases/01_Integration_Tests/get_instances_api: Test Cases/01_Integration_Tests/get_instances_api
+
+2022-09-19 15:00:46 - [TEST_STEP][PASSED] - response = sendRequest(findTestObject("02_Web_Service_Objects/Instance_Info_Retrieval/get_instances")): Send request successfully
+
+2022-09-19 15:00:47 - [MESSAGE][INFO] - HAR: C:\Users\raj09\Developer\katalon\kat-tests\Reports\20220919_150035\02_Integration_Test_Suite\20220919_150035\requests\main\1.har
+
+2022-09-19 15:00:47 - [MESSAGE][PASSED] - Send request successfully
+
+2022-09-19 15:00:48 - [TEST_STEP][PASSED] - verifyResponseStatusCode(response, 200): Verify response status code successfully
+
+2022-09-19 15:00:48 - [MESSAGE][PASSED] - Verify response status code successfully
+
+2022-09-19 15:00:48 - [TEST_STEP][PASSED] - instance_count = getElementPropertyValue(response, "count"): null
+
+2022-09-19 15:00:48 - [TEST_STEP][PASSED] - assert instance_count > 0: null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-09-19 15:00:43 - [TEST_SUITE][PASSED] - 02_Integration_Test_Suite: Test Cases/01_Integration_Tests/get_instances_api]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
