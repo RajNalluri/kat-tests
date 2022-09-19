@@ -25,37 +25,11 @@ WebUI.setText(findTestObject('user_name_field'), login_user)
 
 WebUI.click(findTestObject('login_button'))
 
-WebUI.verifyTextPresent('Rajesh', false)
-
-WebUI.click(findTestObject('create_instance_button'))
-
-WebUI.delay(3)
-
-String created_instance_text = WebUI.getText(findTestObject('created_instance_id'))
-
-String[] str = created_instance_text.split(' ')
-
-String created_instance = str.last()
-
-println(created_instance)
-
-WebUI.verifyTextPresent('i-[0-9a-z]+', true)
-
-WebUI.delay(60)
+WebUI.verifyTextPresent(logged_in_user, false)
 
 WebUI.click(findTestObject('show_instances_status_page'))
 
-String final_text = WebUI.getText(findTestObject('my_instance', [('instance_id'):created_instance]))
-
-println(final_text)
-
-assert final_text.contains('running')
-
-String pub_addr = final_text.split(',').last().split('\'')[1]
-
-WebUI.navigateToUrl('http://' + pub_addr + ':80')
-
-WebUI.verifyTextPresent('Hello ' + login_user + '!', false)
+WebUI.verifyTextPresent('running', false)
 
 WebUI.closeBrowser()
 

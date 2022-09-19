@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+02_Integration_Test_Suite,,,,2022-09-19 12:59:33,2022-09-19 12:59:40,7.016s,FAILED
+,,,,,,,
+Test Cases/01_Integration_Tests/create_instance_api,,,,2022-09-19 12:59:33,2022-09-19 12:59:37,4.273s,FAILED
+"response = sendRequest(findTestObject(""02_Web_Service_Objects/Instance_Creation/create_instance""))",,,,2022-09-19 12:59:33,2022-09-19 12:59:37,3.896s,FAILED
+,,,,,,,
+Test Cases/01_Integration_Tests/get_instances_api,,,,2022-09-19 12:59:37,2022-09-19 12:59:40,2.419s,FAILED
+"response = sendRequest(findTestObject(""02_Web_Service_Objects/Instance_Info_Retrieval/get_instances""))",,,,2022-09-19 12:59:38,2022-09-19 12:59:40,2.108s,FAILED

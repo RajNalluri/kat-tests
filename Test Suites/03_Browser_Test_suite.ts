@@ -36,5 +36,11 @@
       <isRun>true</isRun>
       <testCaseId>Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>4d487ba2-8e09-43bf-a901-0d5e8d0d863d</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

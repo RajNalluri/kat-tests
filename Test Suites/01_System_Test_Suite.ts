@@ -16,17 +16,26 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b92268fe-22be-4ce7-9d04-50160ec482a7</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/users</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>b92268fe-22be-4ce7-9d04-50160ec482a7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>logged_in_user</value>
          <variableId>abfee6a4-e3fe-411b-9e5d-46549a275014</variableId>
       </variableLink>
       <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
+         <testDataLinkId>b92268fe-22be-4ce7-9d04-50160ec482a7</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>expected_message</value>
          <variableId>600fd8e6-e697-4785-888a-9ace74a6ead3</variableId>
       </variableLink>
    </testCaseLink>
@@ -35,6 +44,21 @@
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
       <testCaseId>Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>4641effc-bba9-4b61-9b83-9e8fabdf6497</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/users</testDataId>
+      </testDataLink>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId>4641effc-bba9-4b61-9b83-9e8fabdf6497</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>logged_in_user</value>
+         <variableId>4d487ba2-8e09-43bf-a901-0d5e8d0d863d</variableId>
+      </variableLink>
    </testCaseLink>
 </TestSuiteEntity>
