@@ -17,6 +17,12 @@
       <value></value>
       <variableId>600fd8e6-e697-4785-888a-9ace74a6ead3</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08042083-fe74-4e10-b3ba-88e0fd6aec96</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Rajesh'</defaultValue>
       <description></description>
@@ -30,5 +36,12 @@
       <id>600fd8e6-e697-4785-888a-9ace74a6ead3</id>
       <masked>false</masked>
       <name>expected_message</name>
+   </variable>
+   <variable>
+      <defaultValue>'http://127.0.0.1:5000'</defaultValue>
+      <description></description>
+      <id>08042083-fe74-4e10-b3ba-88e0fd6aec96</id>
+      <masked>false</masked>
+      <name>url</name>
    </variable>
 </TestCaseEntity>

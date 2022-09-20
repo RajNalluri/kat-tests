@@ -1,0 +1,49 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+01_System_Test_Suite,Chrome 105.0.0.0,,,2022-09-19 15:12:54,2022-09-19 15:15:03,2m - 8.985s,FAILED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message,Chrome 105.0.0.0,,,2022-09-19 15:12:54,2022-09-19 15:14:48,1m - 53.978s,PASSED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:12:55,2022-09-19 15:12:58,3.867s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:12:58,2022-09-19 15:12:59,0.001s,PASSED
+"setText(findTestObject(""01_Page_Objects/login_page/user_name_field""), logged_in_user)",Chrome 105.0.0.0,,,2022-09-19 15:12:59,2022-09-19 15:12:59,0.828s,PASSED
+"click(findTestObject(""01_Page_Objects/login_page/login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:12:59,2022-09-19 15:13:00,0.794s,PASSED
+"verifyTextPresent(""Rajesh"", false)",Chrome 105.0.0.0,,,2022-09-19 15:13:00,2022-09-19 15:13:00,0.316s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/create_instance_button""))",Chrome 105.0.0.0,,,2022-09-19 15:13:00,2022-09-19 15:13:04,3.154s,PASSED
+delay(3),Chrome 105.0.0.0,,,2022-09-19 15:13:04,2022-09-19 15:13:07,3.028s,PASSED
+"created_instance_text = getText(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/created_instance_id""))",Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:13:07,0.341s,PASSED
+"str = created_instance_text.split("" "")",Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:13:07,0.002s,PASSED
+created_instance = str.last(),Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:13:07,0.002s,PASSED
+println(created_instance),Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:13:07,0.003s,PASSED
+"verifyTextPresent(""i-[0-9a-z]+"", true)",Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:13:07,0.296s,PASSED
+delay(60),Chrome 105.0.0.0,,,2022-09-19 15:13:07,2022-09-19 15:14:07,1m - 0.006s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page""))",Chrome 105.0.0.0,,,2022-09-19 15:14:07,2022-09-19 15:14:11,3.334s,PASSED
+"final_text = getText(findTestObject(""01_Page_Objects/instances_listing_page/my_instance""))",Chrome 105.0.0.0,,,2022-09-19 15:14:11,2022-09-19 15:14:45,34.062s,PASSED
+println(final_text),Chrome 105.0.0.0,,,2022-09-19 15:14:45,2022-09-19 15:14:45,0.000s,PASSED
+"assert final_text.contains(""running"")",Chrome 105.0.0.0,,,2022-09-19 15:14:45,2022-09-19 15:14:45,0.003s,PASSED
+"pub_addr = last().split(""'"")[1]",Chrome 105.0.0.0,,,2022-09-19 15:14:45,2022-09-19 15:14:45,0.003s,PASSED
+"navigateToUrl(""http://"" + pub_addr + "":80"")",Chrome 105.0.0.0,,,2022-09-19 15:14:45,2022-09-19 15:14:45,0.773s,PASSED
+"verifyTextPresent(expected_message, false)",Chrome 105.0.0.0,,,2022-09-19 15:14:45,2022-09-19 15:14:48,2.138s,PASSED
+closeBrowser(),Chrome 105.0.0.0,,,2022-09-19 15:14:48,2022-09-19 15:14:48,0.698s,PASSED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message,Chrome 105.0.0.0,,,2022-09-19 15:14:48,2022-09-19 15:14:52,3.789s,FAILED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:14:48,2022-09-19 15:14:50,1.940s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:14:50,2022-09-19 15:14:50,0.001s,PASSED
+"setText(findTestObject(""01_Page_Objects/login_page/user_name_field""), logged_in_user)",Chrome 105.0.0.0,,,2022-09-19 15:14:50,2022-09-19 15:14:51,0.680s,PASSED
+"click(findTestObject(""01_Page_Objects/login_page/login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:14:51,2022-09-19 15:14:52,0.727s,PASSED
+"verifyTextPresent(""Rajesh"", false)",Chrome 105.0.0.0,,,2022-09-19 15:14:52,2022-09-19 15:14:52,0.425s,FAILED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand,Chrome 105.0.0.0,,,2022-09-19 15:14:52,2022-09-19 15:14:59,7.030s,PASSED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:14:52,2022-09-19 15:14:55,2.421s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:14:55,2022-09-19 15:14:55,0.001s,PASSED
+"setText(findTestObject(""user_name_field""), login_user)",Chrome 105.0.0.0,,,2022-09-19 15:14:55,2022-09-19 15:14:55,0.709s,PASSED
+"click(findTestObject(""login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:14:55,2022-09-19 15:14:56,0.738s,PASSED
+"verifyTextPresent(logged_in_user, false)",Chrome 105.0.0.0,,,2022-09-19 15:14:56,2022-09-19 15:14:56,0.309s,PASSED
+"click(findTestObject(""show_instances_status_page""))",Chrome 105.0.0.0,,,2022-09-19 15:14:56,2022-09-19 15:14:58,1.733s,PASSED
+"verifyTextPresent(""running"", false)",Chrome 105.0.0.0,,,2022-09-19 15:14:58,2022-09-19 15:14:58,0.288s,PASSED
+closeBrowser(),Chrome 105.0.0.0,,,2022-09-19 15:14:58,2022-09-19 15:14:59,0.665s,PASSED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand,Chrome 105.0.0.0,,,2022-09-19 15:14:59,2022-09-19 15:15:03,3.756s,FAILED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:14:59,2022-09-19 15:15:01,1.894s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:15:01,2022-09-19 15:15:01,0.001s,PASSED
+"setText(findTestObject(""user_name_field""), login_user)",Chrome 105.0.0.0,,,2022-09-19 15:15:01,2022-09-19 15:15:02,0.684s,PASSED
+"click(findTestObject(""login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:15:02,2022-09-19 15:15:02,0.731s,PASSED
+"verifyTextPresent(logged_in_user, false)",Chrome 105.0.0.0,,,2022-09-19 15:15:02,2022-09-19 15:15:03,0.438s,FAILED

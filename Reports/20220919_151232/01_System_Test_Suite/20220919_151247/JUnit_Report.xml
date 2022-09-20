@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="01_System_Test_Suite" time="128.985" tests="4" failures="2" errors="0">
+   <testsuite name="01_System_Test_Suite" tests="4" failures="2" errors="0" time="128.985" skipped="0" timestamp="2022-09-19 15:12:54" hostname="raj09 - LAPTOP-IP13EE2V" id="Test Suites/01_System_Test_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247"/>
+         <property name="logFiles" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247\\execution0.log"/>
+         <property name="attachments" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247\\1663580692501.png, C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247\\1663580703298.png"/>
+         <property name="hostName" value="raj09 - LAPTOP-IP13EE2V"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 105.0.0.0"/>
+         <property name="hostAddress" value="192.168.116.1"/>
+         <property name="sessionId" value="f72581a806951c62544b27906271ea2b"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" time="113.978" classname="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:12:54 - [TEST_CASE][PASSED] - Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message
+
+2022-09-19 15:12:55 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:12:55 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:12:55 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:12:58 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:12:58 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:12:59 - [TEST_STEP][PASSED] - setText(findTestObject("01_Page_Objects/login_page/user_name_field"), logged_in_user): Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:12:59 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:12:59 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/login_page/login_button")): Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:13:00 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:13:00 - [TEST_STEP][PASSED] - verifyTextPresent("Rajesh", false): Text 'Rajesh' is present on page 
+
+2022-09-19 15:13:00 - [MESSAGE][PASSED] - Text 'Rajesh' is present on page 
+
+2022-09-19 15:13:00 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/create_instance_button")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/create_instance_button' is clicked on
+
+2022-09-19 15:13:04 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/create_instance_button' is clicked on
+
+2022-09-19 15:13:04 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-09-19 15:13:07 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - created_instance_text = getText(findTestObject("01_Page_Objects/user_portal_for_instance_creation/created_instance_id")): Text of object 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/created_instance_id' is: 'Instance id: i-06946575e1fee98b4'
+
+2022-09-19 15:13:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/created_instance_id' is: 'Instance id: i-06946575e1fee98b4'
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - str = created_instance_text.split(" "): null
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - created_instance = str.last(): null
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - println(created_instance): null
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - verifyTextPresent("i-[0-9a-z]+", true): Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-19 15:13:07 - [MESSAGE][PASSED] - Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-19 15:13:07 - [TEST_STEP][PASSED] - delay(60): Delayed 60 second(s)
+
+2022-09-19 15:14:07 - [MESSAGE][PASSED] - Delayed 60 second(s)
+
+2022-09-19 15:14:07 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:14:11 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:14:11 - [TEST_STEP][PASSED] - final_text = getText(findTestObject("01_Page_Objects/instances_listing_page/my_instance")): Text of object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' is: '('i-002dc3e34933d840a', 'running', 'ec2-54-90-78-123.compute-1.amazonaws.com')'
+
+2022-09-19 15:14:43 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[(contains(text(), '${instance_id}') or contains(., '${instance_id}'))]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-09-19 15:14:43 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/01_Page_Objects/instances_listing_page/my_instance'. Try using Self-healing.
+
+2022-09-19 15:14:45 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' was broken. Propose an alternative one: '(.//*[normalize-space(text()) and normalize-space(.)='Instance list:'])[1]/following::li[1]'.
+
+2022-09-19 15:14:45 - [MESSAGE][PASSED] - Text of object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' is: '('i-002dc3e34933d840a', 'running', 'ec2-54-90-78-123.compute-1.amazonaws.com')'
+
+2022-09-19 15:14:45 - [TEST_STEP][PASSED] - println(final_text): null
+
+2022-09-19 15:14:45 - [TEST_STEP][PASSED] - assert final_text.contains("running"): null
+
+2022-09-19 15:14:45 - [TEST_STEP][PASSED] - pub_addr = last().split("'")[1]: null
+
+2022-09-19 15:14:45 - [TEST_STEP][PASSED] - navigateToUrl("http://" + pub_addr + ":80"): Navigate to 'http://ec2-54-90-78-123.compute-1.amazonaws.com:80' successfully
+
+2022-09-19 15:14:45 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-90-78-123.compute-1.amazonaws.com:80' successfully
+
+2022-09-19 15:14:45 - [TEST_STEP][PASSED] - verifyTextPresent(expected_message, false): Text 'Hello Rajesh!' is present on page 
+
+2022-09-19 15:14:48 - [MESSAGE][PASSED] - Text 'Hello Rajesh!' is present on page 
+
+2022-09-19 15:14:48 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-19 15:14:48 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" time="3.789" classname="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" status="FAILED">
+         <failure type="FAILED" message="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-09-19 15:14:48 - [TEST_CASE][FAILED] - Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2022-09-19 15:14:48 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:14:48 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:14:48 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:14:50 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:14:50 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:14:50 - [TEST_STEP][PASSED] - setText(findTestObject("01_Page_Objects/login_page/user_name_field"), logged_in_user): Text 'Brad' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:14:51 - [MESSAGE][PASSED] - Text 'Brad' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:14:51 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/login_page/login_button")): Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:14:52 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:14:52 - [TEST_STEP][FAILED] - verifyTextPresent("Rajesh", false): Unable to verify text 'Rajesh' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+
+2022-09-19 15:14:52 - [MESSAGE][FAILED] - Text 'Rajesh' is not present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+)
+
+2022-09-19 15:14:52 - [MESSAGE][FAILED] - Unable to verify text 'Rajesh' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+[[ATTACHMENT|C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247\\1663580692501.png]]]]></system-out>
+         <system-err><![CDATA[2022-09-19 15:14:48 - [TEST_CASE][FAILED] - Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" time="7.03" classname="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:14:52 - [TEST_CASE][PASSED] - Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand: Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand
+
+2022-09-19 15:14:52 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:14:52 - [MESSAGE][WARNING] - A browser is already opened. Closing browser and opening a new one
+
+2022-09-19 15:14:53 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:14:53 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:14:55 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:14:55 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:14:55 - [TEST_STEP][PASSED] - setText(findTestObject("user_name_field"), login_user): Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-19 15:14:55 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-19 15:14:55 - [TEST_STEP][PASSED] - click(findTestObject("login_button")): Object: 'Object Repository/login_button' is clicked on
+
+2022-09-19 15:14:56 - [MESSAGE][PASSED] - Object: 'Object Repository/login_button' is clicked on
+
+2022-09-19 15:14:56 - [TEST_STEP][PASSED] - verifyTextPresent(logged_in_user, false): Text 'Rajesh' is present on page 
+
+2022-09-19 15:14:56 - [MESSAGE][PASSED] - Text 'Rajesh' is present on page 
+
+2022-09-19 15:14:56 - [TEST_STEP][PASSED] - click(findTestObject("show_instances_status_page")): Object: 'Object Repository/show_instances_status_page' is clicked on
+
+2022-09-19 15:14:58 - [MESSAGE][PASSED] - Object: 'Object Repository/show_instances_status_page' is clicked on
+
+2022-09-19 15:14:58 - [TEST_STEP][PASSED] - verifyTextPresent("running", false): Text 'running' is present on page 
+
+2022-09-19 15:14:58 - [MESSAGE][PASSED] - Text 'running' is present on page 
+
+2022-09-19 15:14:58 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-19 15:14:59 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" time="3.756" classname="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" status="FAILED">
+         <failure type="FAILED" message="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Brad' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2022-09-19 15:14:59 - [TEST_CASE][FAILED] - Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand: Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Brad' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2022-09-19 15:14:59 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:14:59 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:14:59 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:15:01 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:15:01 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:15:01 - [TEST_STEP][PASSED] - setText(findTestObject("user_name_field"), login_user): Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-19 15:15:02 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/user_name_field'
+
+2022-09-19 15:15:02 - [TEST_STEP][PASSED] - click(findTestObject("login_button")): Object: 'Object Repository/login_button' is clicked on
+
+2022-09-19 15:15:02 - [MESSAGE][PASSED] - Object: 'Object Repository/login_button' is clicked on
+
+2022-09-19 15:15:02 - [TEST_STEP][FAILED] - verifyTextPresent(logged_in_user, false): Unable to verify text 'Brad' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Brad' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+
+2022-09-19 15:15:03 - [MESSAGE][FAILED] - Text 'Brad' is not present on page  (Root cause: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+)
+
+2022-09-19 15:15:03 - [MESSAGE][FAILED] - Unable to verify text 'Brad' is present  (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Brad' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+)
+[[ATTACHMENT|C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151232\\01_System_Test_Suite\\20220919_151247\\1663580703298.png]]]]></system-out>
+         <system-err><![CDATA[2022-09-19 15:14:59 - [TEST_CASE][FAILED] - Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand: Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Brad' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_retrieval_on_demand.run(instance_retrieval_on_demand:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Brad' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-09-19 15:12:54 - [TEST_SUITE][FAILED] - 01_System_Test_Suite: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2022-09-19 15:12:54 - [TEST_SUITE][FAILED] - 01_System_Test_Suite: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to verify text 'Rajesh' is present 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.verifyTextPresent(VerifyTextPresentKeyword.groovy:83)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword.execute(VerifyTextPresentKeyword.groovy:68)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:74)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.verifyTextPresent(WebUiBuiltInKeywords.groovy:1723)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$verifyTextPresent$2.call(Unknown Source)
+	at instance_creation_with_hello_world_message.run(instance_creation_with_hello_world_message:28)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:448)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:439)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:418)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:410)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:285)
+	at com.kms.katalon.core.common.CommonExecutor.accessTestCaseMainPhase(CommonExecutor.java:65)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:144)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:106)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:185)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1663580567503.run(TempTestSuite1663580567503.groovy:36)
+Caused by: com.kms.katalon.core.exception.StepFailedException: Text 'Rajesh' is not present on page 
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.doCall(VerifyTextPresentKeyword.groovy:79)
+	at com.kms.katalon.core.webui.keyword.builtin.VerifyTextPresentKeyword$_verifyTextPresent_closure1.call(VerifyTextPresentKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

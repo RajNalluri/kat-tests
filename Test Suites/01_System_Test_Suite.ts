@@ -32,6 +32,12 @@
          <value>logged_in_user</value>
          <variableId>4d487ba2-8e09-43bf-a901-0d5e8d0d863d</variableId>
       </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>a5adb212-7451-40b6-ab3a-a3c5cb90ad0c</variableId>
+      </variableLink>
    </testCaseLink>
    <testCaseLink>
       <guid>66b85cf4-d809-4ea5-9177-4b7ab3cbc9e9</guid>
@@ -50,6 +56,12 @@
          <type>DEFAULT</type>
          <value></value>
          <variableId>600fd8e6-e697-4785-888a-9ace74a6ead3</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>08042083-fe74-4e10-b3ba-88e0fd6aec96</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

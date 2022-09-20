@@ -1,0 +1,13 @@
+{
+  "brokenTestObjects": [
+    {
+      "approved": true,
+      "testObjectId": "Object Repository/01_Page_Objects/instances_listing_page/my_instance",
+      "brokenLocatorMethod": "BASIC",
+      "proposedLocator": "(.//*[normalize-space(text()) and normalize-space(.)\u003d\u0027Instance list:\u0027])[1]/following::li[1]",
+      "proposedLocatorMethod": "XPATH",
+      "recoveryMethod": "XPATH",
+      "pathToScreenshot": "Reports/20220919_151232/01_System_Test_Suite/20220919_151247/Object Repository/01_Page_Objects/instances_listing_page/my_instance_XPATH.png"
+    }
+  ]
+}

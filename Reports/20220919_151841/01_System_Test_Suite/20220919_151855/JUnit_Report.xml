@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="01_System_Test_Suite" time="124.89" tests="3" failures="0" errors="0">
+   <testsuite name="01_System_Test_Suite" tests="3" failures="0" errors="0" time="124.89" skipped="0" timestamp="2022-09-19 15:19:03" hostname="raj09 - LAPTOP-IP13EE2V" id="Test Suites/01_System_Test_Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151841\\01_System_Test_Suite\\20220919_151855"/>
+         <property name="logFiles" value="C:\\Users\\raj09\\Developer\\katalon\\kat-tests\\Reports\\20220919_151841\\01_System_Test_Suite\\20220919_151855\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="raj09 - LAPTOP-IP13EE2V"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="8.4.1.208"/>
+         <property name="browser" value="Chrome 105.0.0.0"/>
+         <property name="hostAddress" value="192.168.116.1"/>
+         <property name="sessionId" value="221ff6fd8b0828a56c4d924b060c3c33"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" time="10.582" classname="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:19:04 - [TEST_CASE][PASSED] - Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand: Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand
+
+2022-09-19 15:19:05 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:19:05 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:19:09 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:09 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:19:09 - [TEST_STEP][PASSED] - setText(findTestObject("01_Page_Objects/login_page/user_name_field"), logged_in_user): Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:10 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:10 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/login_page/login_button")): Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:11 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:11 - [TEST_STEP][PASSED] - verifyTextPresent(logged_in_user, false): Text 'Rajesh' is present on page 
+
+2022-09-19 15:19:11 - [MESSAGE][PASSED] - Text 'Rajesh' is present on page 
+
+2022-09-19 15:19:11 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:19:14 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:19:14 - [TEST_STEP][PASSED] - verifyTextPresent("running", false): Text 'running' is present on page 
+
+2022-09-19 15:19:14 - [MESSAGE][PASSED] - Text 'running' is present on page 
+
+2022-09-19 15:19:14 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-19 15:19:15 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" time="7.184" classname="Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:19:15 - [TEST_CASE][PASSED] - Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand: Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand
+
+2022-09-19 15:19:15 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:15 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:19:15 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:19:17 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:17 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:19:17 - [TEST_STEP][PASSED] - setText(findTestObject("01_Page_Objects/login_page/user_name_field"), logged_in_user): Text 'Brad' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:18 - [MESSAGE][PASSED] - Text 'Brad' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:18 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/login_page/login_button")): Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:18 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:18 - [TEST_STEP][PASSED] - verifyTextPresent(logged_in_user, false): Text 'Brad' is present on page 
+
+2022-09-19 15:19:19 - [MESSAGE][PASSED] - Text 'Brad' is present on page 
+
+2022-09-19 15:19:19 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:19:21 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:19:21 - [TEST_STEP][PASSED] - verifyTextPresent("running", false): Text 'running' is present on page 
+
+2022-09-19 15:19:21 - [MESSAGE][PASSED] - Text 'running' is present on page 
+
+2022-09-19 15:19:21 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-19 15:19:22 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" time="106.579" classname="Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message" status="PASSED">
+         <system-out><![CDATA[2022-09-19 15:19:22 - [TEST_CASE][PASSED] - Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message
+
+2022-09-19 15:19:22 - [TEST_STEP][PASSED] - openBrowser("http://localhost:5000"): Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:22 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2022-09-19 15:19:22 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2022-09-19 15:19:24 - [MESSAGE][PASSED] - Browser is opened with url: 'http://localhost:5000'
+
+2022-09-19 15:19:24 - [TEST_STEP][PASSED] - login_user = "Rajesh": null
+
+2022-09-19 15:19:24 - [TEST_STEP][PASSED] - setText(findTestObject("01_Page_Objects/login_page/user_name_field"), logged_in_user): Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:24 - [MESSAGE][PASSED] - Text 'Rajesh' is set on object 'Object Repository/01_Page_Objects/login_page/user_name_field'
+
+2022-09-19 15:19:24 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/login_page/login_button")): Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:25 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/login_page/login_button' is clicked on
+
+2022-09-19 15:19:25 - [TEST_STEP][PASSED] - verifyTextPresent("Rajesh", false): Text 'Rajesh' is present on page 
+
+2022-09-19 15:19:25 - [MESSAGE][PASSED] - Text 'Rajesh' is present on page 
+
+2022-09-19 15:19:25 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/create_instance_button")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/create_instance_button' is clicked on
+
+2022-09-19 15:19:29 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/create_instance_button' is clicked on
+
+2022-09-19 15:19:29 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2022-09-19 15:19:32 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2022-09-19 15:19:32 - [TEST_STEP][PASSED] - created_instance_text = getText(findTestObject("01_Page_Objects/user_portal_for_instance_creation/created_instance_id")): Text of object 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/created_instance_id' is: 'Instance id: i-055da02d44b75ccee'
+
+2022-09-19 15:19:32 - [MESSAGE][PASSED] - Text of object 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/created_instance_id' is: 'Instance id: i-055da02d44b75ccee'
+
+2022-09-19 15:19:32 - [TEST_STEP][PASSED] - str = created_instance_text.split(" "): null
+
+2022-09-19 15:19:32 - [TEST_STEP][PASSED] - created_instance = str.last(): null
+
+2022-09-19 15:19:32 - [TEST_STEP][PASSED] - println(created_instance): null
+
+2022-09-19 15:19:32 - [TEST_STEP][PASSED] - verifyTextPresent("i-[0-9a-z]+", true): Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-19 15:19:33 - [MESSAGE][PASSED] - Text 'i-[0-9a-z]+' is present on page  using regular expression
+
+2022-09-19 15:19:33 - [TEST_STEP][PASSED] - delay(60): Delayed 60 second(s)
+
+2022-09-19 15:20:33 - [MESSAGE][PASSED] - Delayed 60 second(s)
+
+2022-09-19 15:20:33 - [TEST_STEP][PASSED] - click(findTestObject("01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page")): Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:20:35 - [MESSAGE][PASSED] - Object: 'Object Repository/01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page' is clicked on
+
+2022-09-19 15:20:35 - [TEST_STEP][PASSED] - final_text = getText(findTestObject("01_Page_Objects/instances_listing_page/my_instance")): Text of object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' is: '('i-002dc3e34933d840a', 'running', 'ec2-54-90-78-123.compute-1.amazonaws.com')'
+
+2022-09-19 15:21:06 - [MESSAGE][INFO] - Unable to find the element located by 'By.xpath: //*[(contains(text(), '${instance_id}') or contains(., '${instance_id}'))]'. Please recheck the objects properties to make sure the desired element is located. 
+
+2022-09-19 15:21:06 - [MESSAGE][WARNING] - [SELF-HEALING] Failed to find element with id 'Object Repository/01_Page_Objects/instances_listing_page/my_instance'. Try using Self-healing.
+
+2022-09-19 15:21:07 - [MESSAGE][WARNING] - [SELF-HEALING] The current locator of test object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' was broken. Propose an alternative one: '(.//*[normalize-space(text()) and normalize-space(.)='Instance list:'])[1]/following::li[1]'.
+
+2022-09-19 15:21:07 - [MESSAGE][PASSED] - Text of object 'Object Repository/01_Page_Objects/instances_listing_page/my_instance' is: '('i-002dc3e34933d840a', 'running', 'ec2-54-90-78-123.compute-1.amazonaws.com')'
+
+2022-09-19 15:21:07 - [TEST_STEP][PASSED] - println(final_text): null
+
+2022-09-19 15:21:07 - [TEST_STEP][PASSED] - assert final_text.contains("running"): null
+
+2022-09-19 15:21:07 - [TEST_STEP][PASSED] - pub_addr = last().split("'")[1]: null
+
+2022-09-19 15:21:07 - [TEST_STEP][PASSED] - navigateToUrl("http://" + pub_addr + ":80"): Navigate to 'http://ec2-54-90-78-123.compute-1.amazonaws.com:80' successfully
+
+2022-09-19 15:21:07 - [MESSAGE][PASSED] - Navigate to 'http://ec2-54-90-78-123.compute-1.amazonaws.com:80' successfully
+
+2022-09-19 15:21:07 - [TEST_STEP][PASSED] - verifyTextPresent(expected_message, false): Text 'Hello Rajesh!' is present on page 
+
+2022-09-19 15:21:08 - [MESSAGE][PASSED] - Text 'Hello Rajesh!' is present on page 
+
+2022-09-19 15:21:08 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2022-09-19 15:21:08 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2022-09-19 15:19:03 - [TEST_SUITE][PASSED] - 01_System_Test_Suite: Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

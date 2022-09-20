@@ -17,13 +17,15 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.openBrowser('http://localhost:5000')
+//WebUI.openBrowser('http://localhost:5000')
+//
+//String login_user = 'Rajesh'
+//
+//WebUI.setText(findTestObject('01_Page_Objects/login_page/user_name_field'), logged_in_user)
+//
+//WebUI.click(findTestObject('01_Page_Objects/login_page/login_button'))
 
-String login_user = 'Rajesh'
-
-WebUI.setText(findTestObject('01_Page_Objects/login_page/user_name_field'), logged_in_user)
-
-WebUI.click(findTestObject('01_Page_Objects/login_page/login_button'))
+CustomKeywords.'myApp.Login.login'(url, logged_in_user)
 
 WebUI.verifyTextPresent(logged_in_user, false)
 

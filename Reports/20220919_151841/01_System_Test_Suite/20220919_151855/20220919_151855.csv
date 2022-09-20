@@ -1,0 +1,45 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+01_System_Test_Suite,Chrome 105.0.0.0,,,2022-09-19 15:19:03,2022-09-19 15:21:08,2m - 4.890s,PASSED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand,Chrome 105.0.0.0,,,2022-09-19 15:19:04,2022-09-19 15:19:15,10.582s,PASSED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:19:05,2022-09-19 15:19:09,4.551s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:19:09,2022-09-19 15:19:09,0.002s,PASSED
+"setText(findTestObject(""01_Page_Objects/login_page/user_name_field""), logged_in_user)",Chrome 105.0.0.0,,,2022-09-19 15:19:09,2022-09-19 15:19:10,0.796s,PASSED
+"click(findTestObject(""01_Page_Objects/login_page/login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:19:10,2022-09-19 15:19:11,0.773s,PASSED
+"verifyTextPresent(logged_in_user, false)",Chrome 105.0.0.0,,,2022-09-19 15:19:11,2022-09-19 15:19:11,0.330s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page""))",Chrome 105.0.0.0,,,2022-09-19 15:19:11,2022-09-19 15:19:14,2.594s,PASSED
+"verifyTextPresent(""running"", false)",Chrome 105.0.0.0,,,2022-09-19 15:19:14,2022-09-19 15:19:14,0.302s,PASSED
+closeBrowser(),Chrome 105.0.0.0,,,2022-09-19 15:19:14,2022-09-19 15:19:15,0.664s,PASSED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Retrieval/instance_retrieval_on_demand,Chrome 105.0.0.0,,,2022-09-19 15:19:15,2022-09-19 15:19:22,7.184s,PASSED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:19:15,2022-09-19 15:19:17,2.109s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:19:17,2022-09-19 15:19:17,0.002s,PASSED
+"setText(findTestObject(""01_Page_Objects/login_page/user_name_field""), logged_in_user)",Chrome 105.0.0.0,,,2022-09-19 15:19:17,2022-09-19 15:19:18,0.937s,PASSED
+"click(findTestObject(""01_Page_Objects/login_page/login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:19:18,2022-09-19 15:19:18,0.732s,PASSED
+"verifyTextPresent(logged_in_user, false)",Chrome 105.0.0.0,,,2022-09-19 15:19:18,2022-09-19 15:19:19,0.301s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page""))",Chrome 105.0.0.0,,,2022-09-19 15:19:19,2022-09-19 15:19:21,2.141s,PASSED
+"verifyTextPresent(""running"", false)",Chrome 105.0.0.0,,,2022-09-19 15:19:21,2022-09-19 15:19:21,0.291s,PASSED
+closeBrowser(),Chrome 105.0.0.0,,,2022-09-19 15:19:21,2022-09-19 15:19:22,0.656s,PASSED
+,,,,,,,
+Test Cases/02_System_Tests/Instance_Creation/instance_creation_with_hello_world_message,Chrome 105.0.0.0,,,2022-09-19 15:19:22,2022-09-19 15:21:08,1m - 46.579s,PASSED
+"openBrowser(""http://localhost:5000"")",Chrome 105.0.0.0,,,2022-09-19 15:19:22,2022-09-19 15:19:24,1.760s,PASSED
+"login_user = ""Rajesh""",Chrome 105.0.0.0,,,2022-09-19 15:19:24,2022-09-19 15:19:24,0.001s,PASSED
+"setText(findTestObject(""01_Page_Objects/login_page/user_name_field""), logged_in_user)",Chrome 105.0.0.0,,,2022-09-19 15:19:24,2022-09-19 15:19:24,0.711s,PASSED
+"click(findTestObject(""01_Page_Objects/login_page/login_button""))",Chrome 105.0.0.0,,,2022-09-19 15:19:24,2022-09-19 15:19:25,0.716s,PASSED
+"verifyTextPresent(""Rajesh"", false)",Chrome 105.0.0.0,,,2022-09-19 15:19:25,2022-09-19 15:19:25,0.297s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/create_instance_button""))",Chrome 105.0.0.0,,,2022-09-19 15:19:25,2022-09-19 15:19:29,3.454s,PASSED
+delay(3),Chrome 105.0.0.0,,,2022-09-19 15:19:29,2022-09-19 15:19:32,3.023s,PASSED
+"created_instance_text = getText(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/created_instance_id""))",Chrome 105.0.0.0,,,2022-09-19 15:19:32,2022-09-19 15:19:32,0.345s,PASSED
+"str = created_instance_text.split("" "")",Chrome 105.0.0.0,,,2022-09-19 15:19:32,2022-09-19 15:19:32,0.004s,PASSED
+created_instance = str.last(),Chrome 105.0.0.0,,,2022-09-19 15:19:32,2022-09-19 15:19:32,0.002s,PASSED
+println(created_instance),Chrome 105.0.0.0,,,2022-09-19 15:19:32,2022-09-19 15:19:32,0.003s,PASSED
+"verifyTextPresent(""i-[0-9a-z]+"", true)",Chrome 105.0.0.0,,,2022-09-19 15:19:32,2022-09-19 15:19:33,0.294s,PASSED
+delay(60),Chrome 105.0.0.0,,,2022-09-19 15:19:33,2022-09-19 15:20:33,1m - 0.007s,PASSED
+"click(findTestObject(""01_Page_Objects/user_portal_for_instance_creation/show_instances_status_page""))",Chrome 105.0.0.0,,,2022-09-19 15:20:33,2022-09-19 15:20:35,2.443s,PASSED
+"final_text = getText(findTestObject(""01_Page_Objects/instances_listing_page/my_instance""))",Chrome 105.0.0.0,,,2022-09-19 15:20:35,2022-09-19 15:21:07,31.660s,PASSED
+println(final_text),Chrome 105.0.0.0,,,2022-09-19 15:21:07,2022-09-19 15:21:07,0.001s,PASSED
+"assert final_text.contains(""running"")",Chrome 105.0.0.0,,,2022-09-19 15:21:07,2022-09-19 15:21:07,0.001s,PASSED
+"pub_addr = last().split(""'"")[1]",Chrome 105.0.0.0,,,2022-09-19 15:21:07,2022-09-19 15:21:07,0.006s,PASSED
+"navigateToUrl(""http://"" + pub_addr + "":80"")",Chrome 105.0.0.0,,,2022-09-19 15:21:07,2022-09-19 15:21:07,0.586s,PASSED
+"verifyTextPresent(expected_message, false)",Chrome 105.0.0.0,,,2022-09-19 15:21:07,2022-09-19 15:21:08,0.319s,PASSED
+closeBrowser(),Chrome 105.0.0.0,,,2022-09-19 15:21:08,2022-09-19 15:21:08,0.754s,PASSED
